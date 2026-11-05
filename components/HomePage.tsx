@@ -158,7 +158,7 @@ function LevelRoute({ highlight }: { highlight?: string }) {
                 }
                 return (
                   <span key={lv} className="flex justify-center py-1" aria-hidden="true">
-                    <span className="h-9 w-9 rounded-[9px] bg-soft" />
+                    <span className="h-9 w-9" />
                   </span>
                 );
               })}

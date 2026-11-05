@@ -34,6 +34,7 @@ FOLDERS = {
     "koko": "koko",
     "披薩多益": "pizzatoeic",
     "公雞超人": "rooster-hero",
+    "lock in": "lockin",
 }
 
 

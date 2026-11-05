@@ -53,6 +53,12 @@ export const stores: Record<string, StoreInfo> = {
     androidPackage: "com.ptalk.roosterhero",
     released: true,
   },
+  lockin: {
+    iosId: "6789834810",
+    // 只有 iPhone 版，Android 尚未推出
+    androidPackage: "",
+    released: true,
+  },
 };
 
 export function iosUrl(id: string): string | null {

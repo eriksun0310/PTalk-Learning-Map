@@ -50,6 +50,7 @@ const PAINS = [
   { pain: "去日本只會說「すみません」", app: "koko" },
   { pain: "漢字看得懂，寫不出來", app: "hitofude" },
   { pain: "多益單字書翻不完", app: "pizzatoeic" },
+  { pain: "想讀書，手卻一直滑手機", app: "lockin" },
 ];
 
 /** 學習路線：每款 App 涵蓋哪些等級 */
@@ -61,6 +62,8 @@ const ROUTE_ORDER = {
   jp: ["kana5min", "sushitower", "hitofude", "koko", "sushijp", "ninja-pigeon"],
   en: ["pizzatoeic", "rooster-hero"],
 };
+
+const supportApps = apps.filter((a) => a.kind === "support");
 
 function LevelRoute({ highlight }: { highlight?: string }) {
   const [lang, setLang] = useState<"jp" | "en">("jp");
@@ -127,6 +130,23 @@ function LevelRoute({ highlight }: { highlight?: string }) {
           );
         })}
       </ol>
+
+      {/* 學習輔助：不分語言、等級，每一站都用得到 */}
+      {supportApps.length > 0 && (
+        <div className="flex flex-col gap-3 rounded-2xl bg-soft p-4">
+          <span className="text-[14px] font-bold text-sub">每一站都用得到</span>
+          {supportApps.map((a) => (
+            <Link key={a.id} href={`/apps/${a.id}`} className="flex items-center gap-3 no-underline">
+              <AppBadge app={a} size={40} radius={10} />
+              <span className="flex min-w-0 flex-1 flex-col">
+                <span className="text-[15px] leading-tight font-bold">{a.name}</span>
+                <span className="text-[13px] leading-snug text-mute">{howOf(a.id)}</span>
+              </span>
+              <Icon name="chevron-right" size={18} className="text-edge" />
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

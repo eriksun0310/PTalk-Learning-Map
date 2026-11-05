@@ -142,5 +142,23 @@
       "src": "/videos/koko/4.mp4",
       "title": "成長與弱點訓練"
     }
+  ],
+  "lockin": [
+    {
+      "src": "/videos/lockin/1.mp4",
+      "title": "設下你的承諾"
+    },
+    {
+      "src": "/videos/lockin/2.mp4",
+      "title": "語錄攔截與冷靜期"
+    },
+    {
+      "src": "/videos/lockin/3.mp4",
+      "title": "這週拿回10小時"
+    },
+    {
+      "src": "/videos/lockin/4.mp4",
+      "title": "軟鎖硬鎖硬核"
+    }
   ]
 }

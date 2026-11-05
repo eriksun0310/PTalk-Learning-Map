@@ -874,5 +874,97 @@
       "appStore": null,
       "googlePlay": null
     }
+  },
+  {
+    "id": "lockin",
+    "name": "Lock In",
+    "tagline": "鎖住想戒的 App，許下承諾撐到底",
+    "kind": "support",
+    "language": "none",
+    "stages": [],
+    "skills": [],
+    "supports": [
+      "專注",
+      "戒手機",
+      "自律承諾",
+      "習慣追蹤"
+    ],
+    "audience": "想戒掉社群、短影音等 App 的 iPhone 使用者，包括準備考試、需要排除手機干擾的學習者；想要連自己都解不開的強制鎖（例如家長監護），或用 Android 手機的人",
+    "features": [
+      {
+        "title": "鎖住指定 App",
+        "desc": "用系統選擇器選一個 App，設定分鐘、小時或天，立刻生效",
+        "paid": false
+      },
+      {
+        "title": "攔截畫面與語錄",
+        "desc": "打開被鎖 App 會先被擋下，顯示語錄與你自己寫的一句話",
+        "paid": false
+      },
+      {
+        "title": "忍住或放行 15 分鐘",
+        "desc": "按「忍住了」記一次，或「還是要看」放行 15 分鐘後自動鎖回",
+        "paid": false
+      },
+      {
+        "title": "兌現承諾與里程碑",
+        "desc": "達標後可延長或兌現，7、30、60、100、182、365 天有慶祝並可分享",
+        "paid": false
+      },
+      {
+        "title": "本週拿回時間統計",
+        "desc": "看本週手滑、忍住次數與約拿回的時間",
+        "paid": false
+      },
+      {
+        "title": "桌面與鎖定畫面小工具",
+        "desc": "4 款小工具，隨時看見自己堅持了多久",
+        "paid": false
+      },
+      {
+        "title": "鎖定多個 App",
+        "desc": "免費版同時鎖 1 個，升級後不限數量",
+        "paid": true
+      },
+      {
+        "title": "硬鎖與硬核",
+        "desc": "打開前要先等冷靜期，硬核再加手抄自己寫的那句話",
+        "paid": true
+      },
+      {
+        "title": "完整戒斷報表",
+        "desc": "各 App 手滑分佈",
+        "paid": true
+      },
+      {
+        "title": "移除廣告",
+        "desc": "免費版首頁有橫幅廣告，付費移除",
+        "paid": true
+      }
+    ],
+    "counts": [
+      {
+        "label": "語錄",
+        "value": 55
+      },
+      {
+        "label": "桌面小工具",
+        "value": 4
+      },
+      {
+        "label": "里程碑",
+        "value": 6
+      }
+    ],
+    "pricing": "免費下載，免費版同時鎖 1 個 App、只能用軟鎖、首頁有橫幅廣告；Pro 有月繳、年繳與買斷，價格以 App Store 標示為準。",
+    "prev": [],
+    "next": [],
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
   }
 ]

@@ -174,5 +174,23 @@
       "src": "/screenshots/rooster-hero/5.jpg",
       "title": "英雄圖鑑"
     }
+  ],
+  "lockin": [
+    {
+      "src": "/screenshots/lockin/1.jpg",
+      "title": "承諾進行中"
+    },
+    {
+      "src": "/screenshots/lockin/2.jpg",
+      "title": "打開就被攔下"
+    },
+    {
+      "src": "/screenshots/lockin/3.jpg",
+      "title": "冷靜期"
+    },
+    {
+      "src": "/screenshots/lockin/4.jpg",
+      "title": "本週拿回時間"
+    }
   ]
 }

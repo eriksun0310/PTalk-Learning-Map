@@ -2,7 +2,8 @@ import appsJson from "@/data/apps.json";
 import videosJson from "@/data/videos.json";
 import screenshotsJson from "@/data/screenshots.json";
 
-export type Lang = "jp" | "en";
+/** none＝不是語言內容（例如 Lock In 這種學習輔助 App） */
+export type Lang = "jp" | "en" | "none";
 
 export type AppFeature = { title: string; desc: string; paid: boolean };
 
@@ -11,6 +12,10 @@ export type AppData = {
   name: string;
   tagline: string;
   language: Lang;
+  /** support＝學習輔助（不分語言、等級） */
+  kind?: "support";
+  /** 學習輔助 App 幫你的地方，例如「專注」 */
+  supports?: string[];
   stages: string[];
   skills: string[];
   audience: string;
@@ -66,6 +71,7 @@ export function initialOf(app: AppData): string {
 }
 
 export function langLabel(lang: Lang): string {
+  if (lang === "none") return "學習輔助";
   return lang === "jp" ? "日文" : "英文";
 }
 
@@ -73,7 +79,7 @@ export function langLabel(lang: Lang): string {
 export function stageRange(app: AppData): string {
   if (app.language === "en") return "多益";
   const s = app.stages;
-  if (s.length === 0) return "";
+  if (s.length === 0) return app.kind === "support" ? "全階段" : "";
   return s.length === 1 ? s[0] : `${s[0]}–${s[s.length - 1]}`;
 }
 
@@ -92,6 +98,7 @@ const HOW: Record<string, string> = {
   koko: "生活場景，一句句開口說",
   pizzatoeic: "每天 5 分鐘刷多益單字",
   "rooster-hero": "職場情境練多益題目",
+  lockin: "鎖住手機干擾，專心去學",
 };
 
 export function howOf(id: string): string {

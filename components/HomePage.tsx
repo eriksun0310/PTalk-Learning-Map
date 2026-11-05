@@ -53,14 +53,32 @@ const PAINS = [
   { pain: "想讀書，手卻一直滑手機", app: "lockin" },
 ];
 
-/** 學習路線：每款 App 涵蓋哪些等級 */
+/** 學習路線：橫的是等級，直的是能力，格子裡放涵蓋那一級的 App 圖示（像遊戲關卡表） */
 const LEVEL_COLS = {
   jp: ["零基礎", "N5", "N4", "N3", "N2", "N1"],
   en: ["入門", "初級", "中級", "高級"],
 };
-const ROUTE_ORDER = {
-  jp: ["kana5min", "sushitower", "hitofude", "koko", "sushijp", "ninja-pigeon"],
-  en: ["pizzatoeic", "rooster-hero"],
+
+type SkillRow = {
+  skill: string;
+  /** 依序排；同一格有兩款時顯示後面那款 */
+  apps: string[];
+  /** 從這一級開始顯示「即將推出」 */
+  soonFrom?: string;
+};
+
+const SKILL_ROWS: Record<"jp" | "en", SkillRow[]> = {
+  jp: [
+    { skill: "認字", apps: ["kana5min"] },
+    { skill: "單字", apps: ["sushitower", "sushijp"] },
+    { skill: "聽力閱讀", apps: ["ninja-pigeon"] },
+    { skill: "口說", apps: ["koko"], soonFrom: "N3" },
+    { skill: "手寫", apps: ["hitofude"] },
+  ],
+  en: [
+    { skill: "單字", apps: ["pizzatoeic"] },
+    { skill: "聽力閱讀", apps: ["rooster-hero"] },
+  ],
 };
 
 const supportApps = apps.filter((a) => a.kind === "support");
@@ -68,6 +86,10 @@ const supportApps = apps.filter((a) => a.kind === "support");
 function LevelRoute({ highlight }: { highlight?: string }) {
   const [lang, setLang] = useState<"jp" | "en">("jp");
   const levels = LEVEL_COLS[lang];
+  const rows = SKILL_ROWS[lang];
+  const grid = { gridTemplateColumns: `64px repeat(${levels.length}, minmax(0, 1fr))` };
+  const legend = [...new Set(rows.flatMap((r) => r.apps))].map((id) => getApp(id)!);
+
   return (
     <div className="flex flex-col gap-6">
       <div className="flex w-fit rounded-full bg-soft p-1" role="tablist" aria-label="語言">
@@ -87,49 +109,84 @@ function LevelRoute({ highlight }: { highlight?: string }) {
         ))}
       </div>
 
-      {/* 一條路線：左邊線＋每個等級一站，右邊兩欄列出 App（圖示＋名字＋練什麼） */}
-      <ol className="m-0 flex list-none flex-col p-0">
-        {levels.map((lv, i) => {
-          const list = ROUTE_ORDER[lang].map((id) => getApp(id)!).filter((a) => a.stages.includes(lv));
-          const last = i === levels.length - 1;
+      {/* 關卡表：同一個圖示連成一排＝那款 App 涵蓋的等級 */}
+      <div className="flex flex-col">
+        <div className="grid pb-2 text-center text-[12px] font-bold text-mute" style={grid}>
+          <span />
+          {levels.map((lv) => (
+            <span key={lv} className="whitespace-nowrap">
+              {lv}
+            </span>
+          ))}
+        </div>
+        {rows.map((r) => {
+          const soonAt = r.soonFrom ? levels.indexOf(r.soonFrom) : -1;
           return (
-            <li key={lv} className="flex gap-3.5">
-              <div className="relative flex w-4 flex-none justify-center" aria-hidden="true">
-                <span
-                  className={`absolute w-[3px] bg-ink ${i === 0 ? "top-2.5" : "top-0"} ${last ? "h-2.5" : "bottom-0"}`}
-                />
-                <span className="relative mt-[5px] h-4 w-4 rounded-full border-[3px] border-ink bg-white" />
-              </div>
-              <div className={`flex flex-1 flex-col gap-3 ${last ? "" : "pb-8"}`}>
-                <span className="text-[20px] leading-[26px] font-black">{lv}</span>
-                <ul className="m-0 grid list-none grid-cols-1 gap-y-3.5 sm:grid-cols-2 sm:gap-x-4 p-0">
-                  {list.map((a) => {
-                    const on = highlight === a.id;
-                    return (
-                      <li key={a.id}>
-                        <Link href={`/apps/${a.id}`} className="flex items-center gap-3 no-underline">
-                          <AppBadge
-                            app={a}
-                            size={40}
-                            radius={10}
-                            className={on ? "ring-[3px] ring-salmon ring-offset-2" : ""}
-                          />
-                          <span className="flex min-w-0 flex-col">
-                            <span className={`text-[15px] leading-tight font-bold ${on ? "text-salmon" : ""}`}>
-                              {a.name}
-                            </span>
-                            <span className="text-[13px] leading-snug text-mute">{howOf(a.id)}</span>
-                          </span>
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
+            <div key={r.skill} className="grid items-center border-t border-line py-1.5" style={grid}>
+              <span className="text-[14px] font-bold whitespace-nowrap">{r.skill}</span>
+              {levels.map((lv, i) => {
+                const a = r.apps
+                  .map((id) => getApp(id)!)
+                  .filter((x) => x.stages.includes(lv))
+                  .pop();
+                if (a) {
+                  const on = highlight === a.id;
+                  return (
+                    <Link
+                      key={lv}
+                      href={`/apps/${a.id}`}
+                      aria-label={`${r.skill}・${lv}：${a.name}`}
+                      className="flex justify-center py-1"
+                    >
+                      <AppBadge
+                        app={a}
+                        size={36}
+                        radius={9}
+                        className={on ? "ring-[3px] ring-salmon ring-offset-1" : ""}
+                      />
+                    </Link>
+                  );
+                }
+                if (soonAt >= 0 && i >= soonAt) {
+                  return (
+                    <span key={lv} className="flex justify-center py-1" title="即將推出">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-[9px] border-[1.5px] border-dashed border-edge text-[10px] font-bold text-mute">
+                        即將
+                      </span>
+                    </span>
+                  );
+                }
+                return (
+                  <span key={lv} className="flex justify-center py-1" aria-hidden="true">
+                    <span className="h-9 w-9 rounded-[9px] bg-soft" />
+                  </span>
+                );
+              })}
+            </div>
+          );
+        })}
+        <p className="m-0 border-t border-line pt-3 text-[13px] text-mute">
+          同一個圖示連成一排，就是那款 App 涵蓋的等級。點圖示看介紹。
+        </p>
+      </div>
+
+      {/* 圖示說明：每款一句「怎麼學」 */}
+      <ul className="m-0 grid list-none grid-cols-1 gap-3 p-0 sm:grid-cols-2">
+        {legend.map((a) => {
+          const on = highlight === a.id;
+          return (
+            <li key={a.id}>
+              <Link href={`/apps/${a.id}`} className="flex items-center gap-3 no-underline">
+                <AppBadge app={a} size={40} radius={10} className={on ? "ring-[3px] ring-salmon ring-offset-2" : ""} />
+                <span className="flex min-w-0 flex-col">
+                  <span className={`text-[15px] leading-tight font-bold ${on ? "text-salmon" : ""}`}>{a.name}</span>
+                  <span className="text-[13px] leading-snug text-mute">{howOf(a.id)}</span>
+                </span>
+              </Link>
             </li>
           );
         })}
-      </ol>
+      </ul>
 
       {/* 學習輔助：不分語言、等級，每一站都用得到 */}
       {supportApps.length > 0 && (
@@ -290,7 +347,7 @@ export function HomePage() {
         <div className="mx-auto flex max-w-[640px] flex-col gap-5 px-5 py-14 md:py-20">
           <div className="flex flex-col gap-2">
             <h2 className="m-0 text-[24px] font-black md:text-[30px]">學習路線</h2>
-            <p className="m-0 text-[15px] text-sub">找到你的等級，看看這個階段有哪些 App 可以用。</p>
+            <p className="m-0 text-[15px] text-sub">找到你的等級和想加強的能力，就知道該用哪款。</p>
           </div>
           <LevelRoute highlight={app?.id} />
         </div>

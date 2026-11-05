@@ -1,0 +1,146 @@
+{
+  "rooster-hero": [
+    {
+      "src": "/videos/rooster-hero/1.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/rooster-hero/2.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/rooster-hero/3.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/rooster-hero/4.mp4",
+      "title": ""
+    }
+  ],
+  "sushitower": [
+    {
+      "src": "/videos/sushitower/1.mp4",
+      "title": "拖曳拼單字"
+    },
+    {
+      "src": "/videos/sushitower/2.mp4",
+      "title": "Boss戰"
+    },
+    {
+      "src": "/videos/sushitower/3.mp4",
+      "title": "越熟提示越少"
+    },
+    {
+      "src": "/videos/sushitower/4.mp4",
+      "title": "單字圖鑑與今日複習"
+    }
+  ],
+  "ninja-pigeon": [
+    {
+      "src": "/videos/ninja-pigeon/1.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/ninja-pigeon/2.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/ninja-pigeon/3.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/ninja-pigeon/4.mp4",
+      "title": ""
+    }
+  ],
+  "pizzatoeic": [
+    {
+      "src": "/videos/pizzatoeic/1.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/pizzatoeic/2.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/pizzatoeic/3.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/pizzatoeic/4.mp4",
+      "title": ""
+    }
+  ],
+  "hitofude": [
+    {
+      "src": "/videos/hitofude/1.mp4",
+      "title": "寫錯筆順會被抓"
+    },
+    {
+      "src": "/videos/hitofude/2.mp4",
+      "title": "看得見的進步"
+    },
+    {
+      "src": "/videos/hitofude/3.mp4",
+      "title": "2140字學習地圖"
+    },
+    {
+      "src": "/videos/hitofude/4.mp4",
+      "title": "告白情話包"
+    }
+  ],
+  "sushijp": [
+    {
+      "src": "/videos/sushijp/1.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/sushijp/2.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/sushijp/3.mp4",
+      "title": ""
+    },
+    {
+      "src": "/videos/sushijp/4.mp4",
+      "title": ""
+    }
+  ],
+  "kana5min": [
+    {
+      "src": "/videos/kana5min/1.mp4",
+      "title": "用中文諧音記假名"
+    },
+    {
+      "src": "/videos/kana5min/2.mp4",
+      "title": "筆順動畫加描寫"
+    },
+    {
+      "src": "/videos/kana5min/3.mp4",
+      "title": "長音促音聽音辨別"
+    },
+    {
+      "src": "/videos/kana5min/4.mp4",
+      "title": "易混淆字對比"
+    }
+  ],
+  "koko": [
+    {
+      "src": "/videos/koko/1.mp4",
+      "title": "10個日本場景"
+    },
+    {
+      "src": "/videos/koko/2.mp4",
+      "title": "一句話學起來"
+    },
+    {
+      "src": "/videos/koko/3.mp4",
+      "title": "練習到打得出來"
+    },
+    {
+      "src": "/videos/koko/4.mp4",
+      "title": "成長與弱點訓練"
+    }
+  ]
+}

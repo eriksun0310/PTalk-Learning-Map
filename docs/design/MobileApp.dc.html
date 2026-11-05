@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>壽司日檢 介紹（手機）</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#17181A}a:hover{color:#5C6066}
+</style>
+</helmet>
+<div style="width: 390px; height: 2500px; box-sizing: border-box; font-family: 'Noto Sans TC', sans-serif; color: #17181A; background: #FFFFFF; display: flex; flex-direction: column">
+
+<header style="padding: 12px 12px 12px 8px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E3E3E0">
+<a href="Mobile.dc.html" aria-label="回首頁" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#17181A" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg></a>
+<span style="font-weight: 900; font-size: 18px">PTalk</span>
+<button aria-label="選單" style="width: 44px; height: 44px; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#17181A" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</header>
+
+<section style="padding: 24px 20px 0; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; align-items: center; gap: 14px">
+<div style="width: 64px; height: 64px; flex: none; border-radius: 15px; background: #EDEDEA; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5C6066">[圖示]</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5C6066">日文 ・ 單字 ・ N5–N1</span>
+<h1 style="margin: 0; font-size: 32px; line-height: 1.15; font-weight: 900">壽司日檢</h1>
+</div>
+</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3A3D42">每天五分鐘，邊玩壽司邊背日檢單字。答對就掉壽司，錯的字自動排進複習。</p>
+</section>
+
+<section style="padding: 24px 20px; display: flex; justify-content: center">
+<div style="width: 250px; height: 520px; border: 7px solid #17181A; border-radius: 36px; background: #EDEDEA; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5C6066">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#5C6066" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/></svg>
+<span>[螢幕錄影 30 秒]<br>捲到這裡自動播放</span>
+</div>
+</section>
+
+<section style="padding: 0 20px 28px; display: flex; flex-direction: column; gap: 10px">
+<a href="https://apps.apple.com/app/id6774095306" style="display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; background: #17181A; color: #FFFFFF; text-decoration: none; font-size: 17px; font-weight: 700; border-radius: 4px">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M6 11l6 6 6-6M4 21h16"/></svg>免費下載</a>
+<span style="text-align: center; font-size: 13px; color: #5C6066">iPhone 開 App Store，Android 開 Google Play</span>
+</section>
+
+<section style="margin: 0 20px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 2px solid #17181A; border-bottom: 1px solid #E3E3E0">
+<div style="padding: 14px 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 24px; font-weight: 900">7972</span><span style="font-size: 12px; color: #5C6066">個單字</span></div>
+<div style="padding: 14px 0 14px 12px; border-left: 1px solid #E3E3E0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 24px; font-weight: 900">7686</span><span style="font-size: 12px; color: #5C6066">句例句</span></div>
+<div style="padding: 14px 0 14px 12px; border-left: 1px solid #E3E3E0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 24px; font-weight: 900">2050</span><span style="font-size: 12px; color: #5C6066">個漢字</span></div>
+</section>
+
+<section style="padding: 36px 0 32px; background: #F4F4F2; margin-top: 32px; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; padding: 0 20px; font-size: 22px; font-weight: 900">畫面</h2>
+<div style="display: flex; gap: 12px; overflow-x: auto; padding: 0 20px 4px">
+<sc-for list="{{shots}}" as="s" hint-placeholder-count="4">
+<figure style="margin: 0; flex: 0 0 150px; display: flex; flex-direction: column; gap: 8px">
+<div style="height: 310px; background: #E3E3E0; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5C6066">[截圖 {{s.n}}]</div>
+<figcaption style="font-size: 13px; color: #3A3D42">{{s.cap}}</figcaption>
+</figure>
+</sc-for>
+</div>
+<span style="padding: 0 20px; font-size: 12px; color: #5C6066">左右滑看更多</span>
+</section>
+
+<section style="padding: 36px 20px; display: flex; flex-direction: column">
+<h2 style="margin: 0 0 8px; font-size: 22px; font-weight: 900">可以做什麼</h2>
+<sc-for list="{{features}}" as="f" hint-placeholder-count="6">
+<div style="padding: 16px 0; border-top: 1px solid #E3E3E0; display: flex; gap: 14px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #C8401F; padding-top: 3px">{{f.n}}</span>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 17px; font-weight: 700">{{f.title}}</span>
+<span style="font-size: 14px; line-height: 1.6; color: #3A3D42">{{f.desc}}</span>
+</div>
+</div>
+</sc-for>
+</section>
+
+<section style="padding: 0 20px 32px; display: flex; flex-direction: column; gap: 12px">
+<div style="padding: 18px; background: #F4F4F2; border-radius: 4px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 16px; font-weight: 700">適合你，如果</span>
+<span style="font-size: 14px; line-height: 1.6; color: #3A3D42">你在準備日檢 N5 到 N1，想用零碎時間累積單字量。</span>
+</div>
+<div style="padding: 18px; background: #F4F4F2; border-radius: 4px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 16px; font-weight: 700">先別下載，如果</span>
+<span style="font-size: 14px; line-height: 1.6; color: #3A3D42">你還不會五十音，請先用諧音五十音。</span>
+</div>
+<div style="padding: 18px; background: #F4F4F2; border-radius: 4px; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 16px; font-weight: 700">免費能用到哪</span>
+<span style="font-size: 14px; line-height: 1.6; color: #3A3D42">每天有練習次數，看廣告可以補。想無限練習可一次買斷。[價格待確認]</span>
+</div>
+</section>
+
+<section style="padding: 0 20px 36px; display: flex; flex-direction: column; gap: 14px">
+<h2 style="margin: 0; font-size: 22px; font-weight: 900">在路線圖上的位置</h2>
+<div style="display: flex; gap: 14px">
+<div style="width: 20px; display: flex; flex-direction: column; align-items: center">
+<div style="width: 14px; height: 14px; border-radius: 7px; border: 3px solid #17181A; background: #FFFFFF; margin-top: 18px"></div>
+<div style="width: 3px; height: 48px; background: #17181A"></div>
+<div style="width: 18px; height: 18px; border-radius: 9px; background: #E0A91B; border: 3px solid #17181A"></div>
+<div style="width: 3px; height: 48px; background: #17181A"></div>
+<div style="width: 14px; height: 14px; border-radius: 7px; border: 3px solid #17181A; background: #FFFFFF"></div>
+</div>
+<div style="flex: 1; display: flex; flex-direction: column; gap: 14px">
+<a href="MobileApp.dc.html" style="min-height: 48px; display: flex; flex-direction: column; justify-content: center; text-decoration: none; color: #17181A"><span style="font-size: 12px; color: #5C6066">前一站</span><span style="font-size: 16px; font-weight: 700">諧音五十音</span></a>
+<div style="min-height: 48px; display: flex; flex-direction: column; justify-content: center"><span style="font-size: 12px; color: #5C6066">你在這裡</span><span style="font-size: 17px; font-weight: 900">壽司日檢</span></div>
+<a href="MobileApp.dc.html" style="min-height: 48px; display: flex; flex-direction: column; justify-content: center; text-decoration: none; color: #17181A"><span style="font-size: 12px; color: #5C6066">下一站</span><span style="font-size: 16px; font-weight: 700">忍者信鴿</span></a>
+</div>
+</div>
+</section>
+
+<div style="position: sticky; bottom: 0; padding: 12px 20px; background: #FFFFFF; border-top: 1px solid #E3E3E0">
+<a href="https://apps.apple.com/app/id6774095306" style="display: flex; align-items: center; justify-content: center; min-height: 52px; background: #17181A; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 700; border-radius: 4px">免費下載壽司日檢</a>
+</div>
+
+<footer style="margin-top: auto; background: #17181A; color: #B9BCC1; padding: 28px 20px; display: flex; flex-direction: column; gap: 6px; font-size: 13px">
+<span style="font-weight: 900; font-size: 18px; color: #FFFFFF">PTalk</span>
+<span>connect.ptalk@gmail.com ・ Threads @ptalk.design</span>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2500}}'>
+class Component extends DCLogic {
+renderVals() {
+return {
+shots: [
+{ n: 1, cap: '滑卡背新字' },
+{ n: 2, cap: '五分鐘挑戰' },
+{ n: 3, cap: '文脈練習' },
+{ n: 4, cap: '打字考試' }
+],
+features: [
+{ n: '01', title: '背新字', desc: '滑卡背新字，依記憶曲線自動安排複習。' },
+{ n: '02', title: '五分鐘挑戰', desc: '限時答題，答對就掉壽司。' },
+{ n: '03', title: '文脈練習', desc: '日檢式選詞填空，附整句發音。' },
+{ n: '04', title: '打字考試', desc: '看中文打日文，練到真的會拼。' },
+{ n: '05', title: '漢字特訓', desc: '2050 個漢字的讀音和選字。' },
+{ n: '06', title: '量詞與日期讀法', desc: '音變一眼看出來。' }
+]
+};
+}
+}
+</script>
+</body>
+</html>

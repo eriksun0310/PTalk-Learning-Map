@@ -1,0 +1,178 @@
+{
+  "hitofude": [
+    {
+      "src": "/screenshots/hitofude/1.jpg",
+      "title": "學習地圖"
+    },
+    {
+      "src": "/screenshots/hitofude/2.jpg",
+      "title": "書寫小樹"
+    },
+    {
+      "src": "/screenshots/hitofude/3.jpg",
+      "title": "漢字單元"
+    },
+    {
+      "src": "/screenshots/hitofude/4.jpg",
+      "title": "筆順動畫"
+    },
+    {
+      "src": "/screenshots/hitofude/5.jpg",
+      "title": "手寫評分"
+    }
+  ],
+  "kana5min": [
+    {
+      "src": "/screenshots/kana5min/1.jpg",
+      "title": "諧音好笑記法"
+    },
+    {
+      "src": "/screenshots/kana5min/2.jpg",
+      "title": "跟著圓點學筆順"
+    },
+    {
+      "src": "/screenshots/kana5min/3.jpg",
+      "title": "聽聲音選字"
+    },
+    {
+      "src": "/screenshots/kana5min/4.jpg",
+      "title": "長得像的字辨別"
+    },
+    {
+      "src": "/screenshots/kana5min/5.jpg",
+      "title": "諧音總覽"
+    }
+  ],
+  "ninja-pigeon": [
+    {
+      "src": "/screenshots/ninja-pigeon/1.jpg",
+      "title": "學習地圖"
+    },
+    {
+      "src": "/screenshots/ninja-pigeon/2.jpg",
+      "title": "鴿子圖鑑"
+    },
+    {
+      "src": "/screenshots/ninja-pigeon/3.jpg",
+      "title": "文法帳"
+    },
+    {
+      "src": "/screenshots/ninja-pigeon/4.jpg",
+      "title": "聽力配達"
+    },
+    {
+      "src": "/screenshots/ninja-pigeon/5.jpg",
+      "title": "限時挑戰"
+    }
+  ],
+  "sushijp": [
+    {
+      "src": "/screenshots/sushijp/1.jpg",
+      "title": "滑卡背單字"
+    },
+    {
+      "src": "/screenshots/sushijp/2.jpg",
+      "title": "五分鐘挑戰"
+    },
+    {
+      "src": "/screenshots/sushijp/3.jpg",
+      "title": "文脈練習"
+    },
+    {
+      "src": "/screenshots/sushijp/4.jpg",
+      "title": "打字考試"
+    },
+    {
+      "src": "/screenshots/sushijp/5.jpg",
+      "title": "壽司圖鑑"
+    }
+  ],
+  "sushitower": [
+    {
+      "src": "/screenshots/sushitower/1.jpg",
+      "title": "轉珠消除戰鬥"
+    },
+    {
+      "src": "/screenshots/sushitower/2.jpg",
+      "title": "挑戰Boss關卡"
+    },
+    {
+      "src": "/screenshots/sushitower/3.jpg",
+      "title": "世界地圖冒險"
+    },
+    {
+      "src": "/screenshots/sushitower/4.jpg",
+      "title": "關卡路線與星數"
+    },
+    {
+      "src": "/screenshots/sushitower/5.jpg",
+      "title": "單字圖鑑收集"
+    }
+  ],
+  "koko": [
+    {
+      "src": "/screenshots/koko/1.jpg",
+      "title": "成田機場主線地圖"
+    },
+    {
+      "src": "/screenshots/koko/2.jpg",
+      "title": "核心句點詞塊看意思"
+    },
+    {
+      "src": "/screenshots/koko/3.jpg",
+      "title": "拼詞塊排出日文句"
+    },
+    {
+      "src": "/screenshots/koko/4.jpg",
+      "title": "答對附為什麼說明"
+    },
+    {
+      "src": "/screenshots/koko/5.jpg",
+      "title": "改型題換成疑問句"
+    }
+  ],
+  "pizzatoeic": [
+    {
+      "src": "/screenshots/pizzatoeic/1.jpg",
+      "title": "今日背字首頁"
+    },
+    {
+      "src": "/screenshots/pizzatoeic/2.jpg",
+      "title": "打字考試"
+    },
+    {
+      "src": "/screenshots/pizzatoeic/3.jpg",
+      "title": "句子填空"
+    },
+    {
+      "src": "/screenshots/pizzatoeic/4.jpg",
+      "title": "詞形填空"
+    },
+    {
+      "src": "/screenshots/pizzatoeic/5.jpg",
+      "title": "披薩圖鑑"
+    }
+  ],
+  "rooster-hero": [
+    {
+      "src": "/screenshots/rooster-hero/1.jpg",
+      "title": "職場章節闖關"
+    },
+    {
+      "src": "/screenshots/rooster-hero/2.jpg",
+      "title": "多益聽力題"
+    },
+    {
+      "src": "/screenshots/rooster-hero/3.jpg",
+      "title": "多益閱讀題"
+    },
+    {
+      "src": "/screenshots/rooster-hero/4.jpg",
+      "title": "文法帳"
+    },
+    {
+      "src": "/screenshots/rooster-hero/5.jpg",
+      "title": "英雄圖鑑"
+    }
+  ]
+}

@@ -1,0 +1,878 @@
+[
+  {
+    "id": "kana5min",
+    "name": "諧音五十音",
+    "tagline": "台灣人專屬的平假名片假名諧音記憶法",
+    "language": "jp",
+    "stages": [
+      "零基礎"
+    ],
+    "skills": [
+      "認字",
+      "手寫",
+      "聽力"
+    ],
+    "audience": "完全沒學過日文、要從平假名與片假名開始的台灣人；已認得假名的人請改用壽司日檢",
+    "features": [
+      {
+        "title": "每日學新字",
+        "desc": "每輪 3 個新字，看與聽、筆順動畫、描寫練習，間隔複習幫你記住",
+        "paid": false
+      },
+      {
+        "title": "五十音表與發音",
+        "desc": "平假名、片假名各 104 個，附一般與慢速發音",
+        "paid": false
+      },
+      {
+        "title": "多種測驗與練習",
+        "desc": "看字選音、聽音選字、遮一半猜字、默寫、讀外來語、自動練習",
+        "paid": false
+      },
+      {
+        "title": "掉字歸類遊戲",
+        "desc": "六關由易到難，把掉下來的假名分到正確的籃子",
+        "paid": false
+      },
+      {
+        "title": "易混淆字對比",
+        "desc": "18 組長得像的字並排比較，答錯自動累計",
+        "paid": false
+      },
+      {
+        "title": "長音、促音、拗音",
+        "desc": "拍數方塊加最小對立詞，聽音二選一",
+        "paid": false
+      },
+      {
+        "title": "好笑記憶包",
+        "desc": "64 句中文諧音梗；あ行、か行免費，其餘看廣告解鎖或買斷",
+        "paid": true
+      },
+      {
+        "title": "每日提醒",
+        "desc": "本機通知，練過的日子不打擾",
+        "paid": false
+      }
+    ],
+    "counts": [
+      {
+        "label": "假名",
+        "value": 208
+      },
+      {
+        "label": "筆順資料",
+        "value": 151
+      },
+      {
+        "label": "例字與外來語",
+        "value": 291
+      },
+      {
+        "label": "預錄音檔",
+        "value": 998
+      },
+      {
+        "label": "易混淆字組",
+        "value": 18
+      },
+      {
+        "label": "諧音梗",
+        "value": 64
+      }
+    ],
+    "pricing": "免費下載；好笑記憶包可看獎勵廣告逐步解鎖，或一次買斷（價格以商店為準，備用顯示 NT$90）",
+    "prev": [],
+    "next": [
+      "sushijp"
+    ],
+    "updated": "2026-11-04",
+    "folder": "kana5min",
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
+  },
+  {
+    "id": "hitofude",
+    "name": "日日一字",
+    "tagline": "一天一個字，手寫練日文",
+    "language": "jp",
+    "stages": [
+      "零基礎",
+      "N5",
+      "N4",
+      "N3",
+      "N2",
+      "N1"
+    ],
+    "skills": [
+      "認字",
+      "手寫"
+    ],
+    "audience": "想從零開始學日文、想真的把字寫對的華語使用者；不適合要背單字或練聽力文法的人",
+    "features": [
+      {
+        "title": "五十音手寫",
+        "desc": "清音、濁音・半濁音、拗音共 104 個平假名，附發音與筆順動畫",
+        "paid": false
+      },
+      {
+        "title": "小一漢字 80 字",
+        "desc": "教育漢字小學一年級，免費",
+        "paid": false
+      },
+      {
+        "title": "手寫評分",
+        "desc": "比對筆畫數、起筆、方向、形狀與大小，給 1～5 星與提示",
+        "paid": false
+      },
+      {
+        "title": "每日五字＋自動複習",
+        "desc": "新字與複習字自動排好",
+        "paid": false
+      },
+      {
+        "title": "書寫小樹與筆跡對比",
+        "desc": "看見自己越寫越漂亮，可分享進步圖",
+        "paid": false
+      },
+      {
+        "title": "教育漢字小二～小六＋都道府縣",
+        "desc": "共 966 字，升級解鎖",
+        "paid": true
+      },
+      {
+        "title": "常用漢字 1114 字",
+        "desc": "教育漢字之外的進階字，升級解鎖",
+        "paid": true
+      },
+      {
+        "title": "逐筆詳細拆解",
+        "desc": "疊圖對比每一筆，指出錯在哪",
+        "paid": true
+      },
+      {
+        "title": "告白・交往情話包",
+        "desc": "40 句日語情話手寫字帖，附發音，買斷永久使用",
+        "paid": true
+      },
+      {
+        "title": "iCloud 備份（僅 iOS）",
+        "desc": "訂閱會員自動備份學習紀錄",
+        "paid": true
+      }
+    ],
+    "counts": [
+      {
+        "label": "漢字總計",
+        "value": 2140
+      },
+      {
+        "label": "假名",
+        "value": 104
+      },
+      {
+        "label": "教育漢字",
+        "value": 1006
+      },
+      {
+        "label": "都道府縣漢字",
+        "value": 20
+      },
+      {
+        "label": "常用漢字",
+        "value": 1114
+      },
+      {
+        "label": "情話句",
+        "value": 40
+      }
+    ],
+    "pricing": "免費：五十音＋小一 80 字（含廣告）；訂閱（月／年）解鎖全部漢字、逐筆拆解並移除廣告；情話包另購買斷",
+    "prev": [],
+    "next": [
+      "sushijp",
+      "ninja-pigeon"
+    ],
+    "updated": "2026-11-04",
+    "folder": "hitofudeapp",
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
+  },
+  {
+    "id": "sushitower",
+    "name": "壽司轉珠",
+    "tagline": "拖曳假名拼出日文單字的闖關冒險遊戲",
+    "language": "jp",
+    "stages": [
+      "零基礎",
+      "N5"
+    ],
+    "skills": [
+      "認字",
+      "單字"
+    ],
+    "audience": "已認得部分假名、想用遊戲方式累積 N5 基礎單字的人",
+    "features": [
+      {
+        "title": "假名轉珠戰鬥",
+        "desc": "在 5×5 假名盤面拖曳，拼出題目單字打倒敵人，一次拼多字有 Combo",
+        "paid": false
+      },
+      {
+        "title": "4 區 24 關與 4 隻 Boss",
+        "desc": "食物、自然動物、顏色數字、天氣季節四大主題，每區 5 關加 Boss",
+        "paid": false
+      },
+      {
+        "title": "單字圖鑑與熟練度",
+        "desc": "79 個單字附插圖、假名、中文與裝置語音發音，熟練度越高提示越少",
+        "paid": false
+      },
+      {
+        "title": "今日の復習與無盡複習",
+        "desc": "自動挑出最容易忘的字每天複習，另有無盡挑戰",
+        "paid": false
+      },
+      {
+        "title": "免費到第 1 區",
+        "desc": "第 2 區起每關看廣告解鎖，或一次買斷完整版",
+        "paid": true
+      }
+    ],
+    "counts": [
+      {
+        "label": "區域",
+        "value": 4
+      },
+      {
+        "label": "關卡（含 Boss）",
+        "value": 24
+      },
+      {
+        "label": "單字",
+        "value": 79
+      },
+      {
+        "label": "Boss",
+        "value": 4
+      }
+    ],
+    "pricing": "第 1 區免費；第 2 區起每關看獎勵廣告解鎖，或買斷完整版（價格由商店決定，預設顯示 NT$190）",
+    "prev": [
+      "kana5min"
+    ],
+    "next": [
+      "sushijp"
+    ],
+    "updated": "2026-11-04",
+    "folder": "sushitowergame",
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
+  },
+  {
+    "id": "sushijp",
+    "name": "壽司日檢",
+    "tagline": "每天五分鐘，邊玩壽司邊背日檢單字",
+    "language": "jp",
+    "stages": [
+      "N5",
+      "N4",
+      "N3",
+      "N2",
+      "N1"
+    ],
+    "skills": [
+      "認字",
+      "單字"
+    ],
+    "audience": "準備 JLPT N5～N1 的華語學習者，想利用零碎時間累積單字量；不適合還不會五十音者",
+    "features": [
+      {
+        "title": "背新字",
+        "desc": "滑卡背新字，可選主題與隨機順序，依記憶曲線安排複習",
+        "paid": false
+      },
+      {
+        "title": "五分鐘挑戰與無限沉浸",
+        "desc": "限時或不限時答題，依答對率掉壽司，可選惡魔模式",
+        "paid": false
+      },
+      {
+        "title": "文脈練習",
+        "desc": "日檢式選詞填空，附整句發音與中譯",
+        "paid": false
+      },
+      {
+        "title": "打字考試",
+        "desc": "看中文打日文，限時輪替與掉落式兩種玩法",
+        "paid": false
+      },
+      {
+        "title": "壽司圖鑑",
+        "desc": "集滿 26 種壽司與 7 種惡魔壽司，解鎖更高等級",
+        "paid": false
+      },
+      {
+        "title": "特訓：背漢字與漢字書寫",
+        "desc": "2,050 個漢字的讀音與看假名選漢字",
+        "paid": false
+      },
+      {
+        "title": "特訓：量詞與日期時間讀法",
+        "desc": "29 組量詞、5 組日期時間讀法，音變上色並附發音",
+        "paid": false
+      },
+      {
+        "title": "單字本與學習月曆",
+        "desc": "複習與收藏分頁，月曆查看每日學習紀錄",
+        "paid": false
+      },
+      {
+        "title": "單字例句附發音與重音",
+        "desc": "單字與例句附 TTS 發音，標示高低音調",
+        "paid": false
+      },
+      {
+        "title": "桌面小工具",
+        "desc": "每日一字免費；智慧複習、文脈練習、今日讀法、量詞速查、考試衝刺需購買特訓＋小工具",
+        "paid": true
+      },
+      {
+        "title": "無限次練習與雲端備份",
+        "desc": "買斷無上限版，移除廣告、每日次數不限並可雲端備份進度（iOS iCloud／Android Google 雲端硬碟）",
+        "paid": true
+      }
+    ],
+    "counts": [
+      {
+        "label": "單字",
+        "value": 7972
+      },
+      {
+        "label": "例句",
+        "value": 7686
+      },
+      {
+        "label": "文脈練習題",
+        "value": 7069
+      },
+      {
+        "label": "日語重音資料",
+        "value": 6673
+      },
+      {
+        "label": "漢字",
+        "value": 2050
+      },
+      {
+        "label": "量詞變化表",
+        "value": 29
+      },
+      {
+        "label": "一般壽司圖鑑",
+        "value": 26
+      }
+    ],
+    "pricing": "免費下載，每日練習有次數上限，看廣告可補充；買斷制不訂閱（無上限版、特訓＋小工具、全功能典藏版），價格由商店讀取，待確認",
+    "prev": [
+      "kana5min"
+    ],
+    "next": [
+      "ninja-pigeon"
+    ],
+    "updated": "2026-11-04",
+    "folder": "jlpt5minapp",
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
+  },
+  {
+    "id": "ninja-pigeon",
+    "name": "忍者信鴿",
+    "tagline": "鴿子忍者陪你聽日文、練文法、讀短文",
+    "language": "jp",
+    "stages": [
+      "N5",
+      "N4",
+      "N3",
+      "N2",
+      "N1"
+    ],
+    "skills": [
+      "聽力",
+      "文法",
+      "閱讀"
+    ],
+    "audience": "已學完五十音、準備日檢 N5～N1 的華語學習者，想用低壓力的收集式遊戲練聽力、文法與讀解",
+    "features": [
+      {
+        "title": "情境聽力配達",
+        "desc": "おつかい、まちかど、あいさつ三章，聽預錄音檔選正解，每級 90 題上下",
+        "paid": false
+      },
+      {
+        "title": "文法の道場",
+        "desc": "聽例句驗文法，含挖空與聽語調，五級共 848 題",
+        "paid": true
+      },
+      {
+        "title": "腕試しの関讀解",
+        "desc": "短文、公告、挖空與重組句子，每級 70 題，共 350 題",
+        "paid": true
+      },
+      {
+        "title": "限時挑戰模式",
+        "desc": "倒數計時、3 條命、連擊加分，可收服夜行鴿",
+        "paid": true
+      },
+      {
+        "title": "文法帳",
+        "desc": "848 個文法點含接續與預錄例句，每級前 5 個免費",
+        "paid": false
+      },
+      {
+        "title": "鴿子圖鑑與集印帳",
+        "desc": "50 隻鴿子、郵戳與羽毛收集",
+        "paid": false
+      },
+      {
+        "title": "看廣告解鎖",
+        "desc": "免費者每天看廣告解鎖 2 個小關",
+        "paid": false
+      },
+      {
+        "title": "每日提醒",
+        "desc": "每天固定時間本機提醒",
+        "paid": false
+      }
+    ],
+    "counts": [
+      {
+        "label": "題目",
+        "value": 1646
+      },
+      {
+        "label": "關卡",
+        "value": 242
+      },
+      {
+        "label": "文法點",
+        "value": 848
+      },
+      {
+        "label": "鴿子",
+        "value": 50
+      },
+      {
+        "label": "含音檔題目",
+        "value": 1296
+      }
+    ],
+    "pricing": "免費下載，各級おつかい全開並含廣告；單級買斷（後備價 NT$60）或全解鎖（後備價 NT$250），實際價格以商店為準",
+    "prev": [
+      "kana5min"
+    ],
+    "next": [
+      "sushijp"
+    ],
+    "updated": "2026-11-04",
+    "folder": "ninja-pigeon",
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
+  },
+  {
+    "id": "koko",
+    "name": "KOKO",
+    "tagline": "從機場到居酒屋，一天一句開口說日文",
+    "language": "jp",
+    "stages": [
+      "N5",
+      "N4"
+    ],
+    "skills": [
+      "文法",
+      "口說"
+    ],
+    "audience": "想去日本旅遊或生活、已看得懂假名、要把 N5～N4 句型說出口的初學者",
+    "features": [
+      {
+        "title": "10 章生活場景主線",
+        "desc": "機場、電車、便利商店、餐廳、旅館、藥妝店、居酒屋、醫院，共 100 課，一課一句核心句",
+        "paid": false
+      },
+      {
+        "title": "拼句／助詞／選句練習",
+        "desc": "基礎題型免費，答錯附「為什麼」說明；改型題免費試玩 1 題",
+        "paid": false
+      },
+      {
+        "title": "核心句附發音",
+        "desc": "每課核心句可播放 TTS 發音，並附振假名",
+        "paid": false
+      },
+      {
+        "title": "入學測驗與章節結業考",
+        "desc": "8 題入學測驗定起點；每章結業考 80% 通過，可口說或打字作答",
+        "paid": false
+      },
+      {
+        "title": "學過的文法複習",
+        "desc": "依 N5／N4 分組、可搜尋，顯示穩了／不熟標籤",
+        "paid": false
+      },
+      {
+        "title": "每日提醒",
+        "desc": "自訂時間提醒學習，守住連續天數",
+        "paid": false
+      },
+      {
+        "title": "深化題型與跟讀",
+        "desc": "換字、找錯、完整改型、語音辨識跟讀打分",
+        "paid": true
+      },
+      {
+        "title": "弱點訓練不限次數",
+        "desc": "把答錯的句子換方式再練；免費版每週 1 次",
+        "paid": true
+      },
+      {
+        "title": "月度學習報告",
+        "desc": "完整文法追蹤與近 6 個月答對率趨勢",
+        "paid": true
+      },
+      {
+        "title": "Streak 補簽卡",
+        "desc": "每月 2 張，漏學一天不斷連續紀錄",
+        "paid": true
+      },
+      {
+        "title": "雲端備份與只看假名模式",
+        "desc": "登入後備份進度；隱藏漢字讀音練假名",
+        "paid": true
+      },
+      {
+        "title": "免廣告與不限每日新課",
+        "desc": "免費版第 2 章起每天 2 課且需看獎勵廣告",
+        "paid": true
+      }
+    ],
+    "counts": [
+      {
+        "label": "章節",
+        "value": 10
+      },
+      {
+        "label": "課數",
+        "value": 100
+      },
+      {
+        "label": "練習題",
+        "value": 800
+      },
+      {
+        "label": "文法點",
+        "value": 73
+      },
+      {
+        "label": "詞塊",
+        "value": 172
+      },
+      {
+        "label": "發音音檔",
+        "value": 100
+      }
+    ],
+    "pricing": "免費版第 1 章全開、第 2 章起每天 2 課（看獎勵廣告）；KOKO PRO 訂閱（月繳／年繳，價格依商店顯示，年繳含試用待確認），無買斷",
+    "prev": [
+      "kana5min"
+    ],
+    "next": [
+      "sushijp",
+      "ninja-pigeon"
+    ],
+    "updated": "2026-11-04",
+    "folder": "sushiconversationapp",
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
+  },
+  {
+    "id": "pizzatoeic",
+    "name": "披薩多益",
+    "tagline": "多益單字每天刷五分鐘，答對收披薩",
+    "language": "en",
+    "stages": [
+      "入門",
+      "初級",
+      "中級",
+      "高級"
+    ],
+    "skills": [
+      "單字",
+      "聽力",
+      "文法"
+    ],
+    "audience": "準備多益、想從單字打底的台灣學習者，涵蓋 10–990 分五級證書（橘 10–215、棕 220–465、綠 470–725、藍 730–855、金 860–990）",
+    "features": [
+      {
+        "title": "程度小測與五色證書",
+        "desc": "看英文選中文，自動判出你在哪一級證書（橘、棕、綠、藍、金）",
+        "paid": false
+      },
+      {
+        "title": "五分鐘挑戰與無限沉浸",
+        "desc": "限時或不限時刷題，答對拿披薩，可切 8 選 1 惡魔難度",
+        "paid": false
+      },
+      {
+        "title": "間隔複習",
+        "desc": "SM-2 間隔複習，到期的字出現在首頁",
+        "paid": false
+      },
+      {
+        "title": "句子填空",
+        "desc": "多益 Part 5 風格單句選詞填空，4,119 題",
+        "paid": false
+      },
+      {
+        "title": "打字考試",
+        "desc": "看中文拼英文，限時",
+        "paid": false
+      },
+      {
+        "title": "披薩圖鑑",
+        "desc": "收集 26 款披薩、7 款惡魔披薩與 3 種佐料",
+        "paid": false
+      },
+      {
+        "title": "單字與例句附發音",
+        "desc": "單字附預錄發音、例句走手機語音，可調語速",
+        "paid": false
+      },
+      {
+        "title": "靜音玩法",
+        "desc": "通勤不能開聲音也能刷題",
+        "paid": false
+      },
+      {
+        "title": "每日一字桌面小工具",
+        "desc": "iOS 與 Android 桌面每天一個單字",
+        "paid": false
+      },
+      {
+        "title": "無上限版",
+        "desc": "解除背新字、五分鐘、無限、填空、打字的每日次數與廣告，並可 iCloud 備份（備份僅 iOS）",
+        "paid": true
+      },
+      {
+        "title": "特訓＋字根版",
+        "desc": "字根卡、詞性變化、不可數名詞、不規則動詞特訓、詞形填空與五款桌面小工具",
+        "paid": true
+      }
+    ],
+    "counts": [
+      {
+        "label": "單字",
+        "value": 4215
+      },
+      {
+        "label": "例句",
+        "value": 4215
+      },
+      {
+        "label": "句子填空題",
+        "value": 4119
+      },
+      {
+        "label": "詞性變化字",
+        "value": 610
+      },
+      {
+        "label": "詞形填空題",
+        "value": 234
+      },
+      {
+        "label": "字根卡",
+        "value": 36
+      },
+      {
+        "label": "不規則動詞",
+        "value": 97
+      },
+      {
+        "label": "披薩圖鑑（一般＋惡魔）",
+        "value": 33
+      }
+    ],
+    "pricing": "免費下載，每日有練習次數與橫幅、獎勵廣告；買斷制內購分兩條線（無上限版、特訓＋字根版）與全套典藏，價格以商店標示為準（App 內預設顯示 NT$90／NT$150／NT$240，待確認）",
+    "prev": [],
+    "next": [
+      "rooster-hero"
+    ],
+    "updated": "2026-11-04",
+    "folder": "pizzatoeicapp",
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
+  },
+  {
+    "id": "rooster-hero",
+    "name": "公雞超人",
+    "tagline": "用職場情境闖關練多益，聽讀單字文法",
+    "language": "en",
+    "stages": [
+      "入門",
+      "初級",
+      "中級",
+      "高級"
+    ],
+    "skills": [
+      "單字",
+      "文法",
+      "聽力",
+      "閱讀"
+    ],
+    "audience": "準備新多益（10–990 分各分數帶）的上班族與學生；不適合想練口說或要官方模擬考計分的人",
+    "features": [
+      {
+        "title": "五色證書五級題庫",
+        "desc": "橘10–215／棕220–465／綠470–725／藍730–855／金860–990，各級從辦公室到財務、物流等職場情境",
+        "paid": false
+      },
+      {
+        "title": "聽力題（預錄英文 TTS 發音）",
+        "desc": "對話與單句應答，女聲 Aria／男聲 Guy，可重聽、有慢速",
+        "paid": false
+      },
+      {
+        "title": "單字題",
+        "desc": "職場情境選字填空，辦公室章免費",
+        "paid": false
+      },
+      {
+        "title": "閱讀題（短文理解、資訊查找）",
+        "desc": "信件、公告、文章，無音檔",
+        "paid": true
+      },
+      {
+        "title": "文法工坊",
+        "desc": "每級 3 關 20 題，一題對一個文法點；可看廣告解鎖",
+        "paid": true
+      },
+      {
+        "title": "文法帳",
+        "desc": "每級 20 個文法點含例句，每級前 5 個免費",
+        "paid": true
+      },
+      {
+        "title": "腕試之關：重組句子與文章結構",
+        "desc": "每級 3 關綜合挑戰",
+        "paid": true
+      },
+      {
+        "title": "限時挑戰模式",
+        "desc": "倒數計時、3 條命、連擊倍率",
+        "paid": true
+      },
+      {
+        "title": "看獎勵廣告解鎖",
+        "desc": "免費玩家每天可解鎖 2 小關（會議與文法章）",
+        "paid": false
+      },
+      {
+        "title": "英雄圖鑑與金章牆",
+        "desc": "50 隻公雞角色與關卡金銀章收集",
+        "paid": false
+      },
+      {
+        "title": "每日提醒、字體大小、語速設定",
+        "desc": "本機通知與學習偏好",
+        "paid": false
+      }
+    ],
+    "counts": [
+      {
+        "label": "題目總數",
+        "value": 1581
+      },
+      {
+        "label": "小關總數",
+        "value": 230
+      },
+      {
+        "label": "聽力題",
+        "value": 510
+      },
+      {
+        "label": "單字題",
+        "value": 252
+      },
+      {
+        "label": "文法題",
+        "value": 100
+      },
+      {
+        "label": "閱讀題",
+        "value": 669
+      },
+      {
+        "label": "重組句題",
+        "value": 50
+      },
+      {
+        "label": "文法帳文法點",
+        "value": 100
+      },
+      {
+        "label": "英雄角色",
+        "value": 50
+      }
+    ],
+    "pricing": "免費下載；每級辦公室章免費，會議與文法工坊可看廣告每天解鎖 2 小關；其餘章節、腕試之關、限時挑戰需買斷（按證書等級單買或全解鎖，價格由商店讀取，待確認）；免費版含橫幅廣告",
+    "prev": [
+      "pizzatoeic"
+    ],
+    "next": [],
+    "updated": "2026-11-04",
+    "folder": "ninjatoeicapp",
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
+  }
+]

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>PTalk 學習地圖 手機首頁</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#17181A}a:hover{color:#5C6066}
+</style>
+</helmet>
+<div style="width: 390px; height: 2600px; box-sizing: border-box; font-family: 'Noto Sans TC', sans-serif; color: #17181A; background: #FFFFFF; display: flex; flex-direction: column">
+
+<header style="padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #E3E3E0">
+<span style="font-weight: 900; font-size: 20px">PTalk</span>
+<button aria-label="選單" style="width: 44px; height: 44px; border: 0; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#17181A" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</header>
+
+<section style="padding: 36px 20px 40px; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5C6066">8 款 App ・ 日文 6 ・ 英文 2</p>
+<h1 style="margin: 0; font-size: 38px; line-height: 1.2; font-weight: 900">現在的你，<br>該下載哪一款？</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.7; color: #3A3D42">回答 3 個問題，直接告訴你最適合的一款。</p>
+<div style="display: flex; gap: 10px; justify-content: center; padding: 8px 0">
+<div style="width: 100px; height: 206px; margin-top: 28px; border: 5px solid #17181A; border-radius: 20px; background: #EDEDEA; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5C6066">[影片]</div>
+<div style="width: 112px; height: 232px; border: 5px solid #17181A; border-radius: 22px; background: #EDEDEA; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5C6066">[影片]</div>
+<div style="width: 100px; height: 206px; margin-top: 56px; border: 5px solid #17181A; border-radius: 20px; background: #EDEDEA; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #5C6066">[影片]</div>
+</div>
+<a href="Result.dc.html" style="display: flex; align-items: center; justify-content: center; min-height: 56px; background: #17181A; color: #FFFFFF; text-decoration: none; font-size: 17px; font-weight: 700; border-radius: 4px">我要學日文</a>
+<a href="Result.dc.html" style="display: flex; align-items: center; justify-content: center; min-height: 56px; background: #FFFFFF; color: #17181A; text-decoration: none; font-size: 17px; font-weight: 700; border: 2px solid #17181A; border-radius: 4px">我要學英文（多益）</a>
+</section>
+
+<section style="background: #F4F4F2; padding: 36px 20px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; justify-content: space-between; align-items: baseline">
+<h2 style="margin: 0; font-size: 24px; font-weight: 900">幫我選</h2>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #5C6066">02 / 03</span>
+</div>
+<div style="height: 4px; background: #E3E3E0; border-radius: 2px"><div style="width: 66%; height: 4px; background: #C8401F; border-radius: 2px"></div></div>
+<fieldset style="margin: 0; border: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+<legend style="padding: 0; margin-bottom: 12px; font-size: 19px; font-weight: 700">你現在的程度？</legend>
+<label style="display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 16px; background: #FFFFFF; border: 2px solid #17181A; border-radius: 4px; font-size: 16px; font-weight: 700"><input type="radio" name="m2" checked> 五十音還不會</label>
+<label style="display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 16px; background: #FFFFFF; border: 1px solid #C9C9C5; border-radius: 4px; font-size: 16px"><input type="radio" name="m2"> 會五十音（N5–N4）</label>
+<label style="display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 16px; background: #FFFFFF; border: 1px solid #C9C9C5; border-radius: 4px; font-size: 16px"><input type="radio" name="m2"> 準備 N3</label>
+<label style="display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 16px; background: #FFFFFF; border: 1px solid #C9C9C5; border-radius: 4px; font-size: 16px"><input type="radio" name="m2"> 準備 N2–N1</label>
+</fieldset>
+<a href="Result.dc.html" style="display: flex; align-items: center; justify-content: center; min-height: 52px; background: #17181A; color: #FFFFFF; text-decoration: none; font-size: 16px; font-weight: 700; border-radius: 4px">下一題</a>
+</section>
+
+<section style="padding: 40px 20px; display: flex; flex-direction: column; gap: 20px">
+<h2 style="margin: 0; font-size: 24px; font-weight: 900">日文學習路線圖</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3A3D42">由上往下就是學習順序。</p>
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{stops}}" as="s" hint-placeholder-count="6">
+<div style="display: flex; gap: 14px">
+<div style="width: 20px; display: flex; flex-direction: column; align-items: center">
+<div style="width: 14px; height: 14px; border-radius: 7px; border: 3px solid #17181A; background: #FFFFFF; flex: none; margin-top: 4px"></div>
+<div style="width: 3px; flex: 1; background: #17181A"></div>
+</div>
+<div style="flex: 1; min-width: 0; padding-bottom: 22px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 17px; font-weight: 900">{{s.stage}}</span>
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{s.apps}}" as="a" hint-placeholder-count="2">
+<span style="padding: 6px 12px; border-radius: 16px; font-size: 14px; font-weight: 700; {{a.style}}">{{a.name}}</span>
+</sc-for>
+</div>
+</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="border-top: 1px solid #E3E3E0; padding: 40px 20px; display: flex; flex-direction: column; gap: 4px">
+<h2 style="margin: 0 0 16px; font-size: 24px; font-weight: 900">全部 App</h2>
+<sc-for list="{{apps}}" as="app" hint-placeholder-count="8">
+<a href="MobileApp.dc.html" style="display: flex; align-items: center; gap: 14px; padding: 12px 0; border-bottom: 1px solid #E3E3E0; text-decoration: none; color: #17181A">
+<div style="width: 48px; height: 48px; flex: none; border-radius: 12px; background: #17181A; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px">{{app.initial}}</div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 17px; font-weight: 700">{{app.name}}</span>
+<span style="font-size: 13px; color: #5C6066">{{app.tagline}}</span>
+</div>
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#17181A" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+</a>
+</sc-for>
+</section>
+
+<footer style="margin-top: auto; background: #17181A; color: #B9BCC1; padding: 32px 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+<span style="font-weight: 900; font-size: 20px; color: #FFFFFF">PTalk</span>
+<span>connect.ptalk@gmail.com</span>
+<span>Threads @ptalk.design</span>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":2600}}'>
+class Component extends DCLogic {
+renderVals() {
+var red = 'background: #C8401F; color: #FFFFFF';
+var yellow = 'background: #E0A91B; color: #17181A';
+var blue = 'background: #1F5FAD; color: #FFFFFF';
+var purple = 'background: #7A3477; color: #FFFFFF';
+var green = 'background: #2E7D5B; color: #FFFFFF';
+var soon = 'border: 2px dashed #8A8E94; color: #5C6066';
+return {
+stops: [
+{ stage: '零基礎', apps: [{ name: '諧音五十音', style: red }, { name: '壽司轉珠', style: yellow }, { name: '日日一字', style: green }] },
+{ stage: 'N5', apps: [{ name: '壽司日檢', style: yellow }, { name: '忍者信鴿', style: blue }, { name: 'KOKO', style: purple }] },
+{ stage: 'N4', apps: [{ name: '壽司日檢', style: yellow }, { name: '忍者信鴿', style: blue }, { name: 'KOKO', style: purple }] },
+{ stage: 'N3', apps: [{ name: '壽司日檢', style: yellow }, { name: '忍者信鴿', style: blue }, { name: '口說 即將推出', style: soon }] },
+{ stage: 'N2', apps: [{ name: '壽司日檢', style: yellow }, { name: '忍者信鴿', style: blue }] },
+{ stage: 'N1', apps: [{ name: '壽司日檢', style: yellow }, { name: '忍者信鴿', style: blue }] }
+],
+apps: [
+{ initial: '諧', name: '諧音五十音', tagline: '用中文諧音記住假名' },
+{ initial: '轉', name: '壽司轉珠', tagline: '拖曳假名拼單字闖關' },
+{ initial: '壽', name: '壽司日檢', tagline: '每天五分鐘背日檢單字' },
+{ initial: '鴿', name: '忍者信鴿', tagline: '練日檢聽力、文法、閱讀' },
+{ initial: 'K', name: 'KOKO', tagline: '開口說日本生活日語' },
+{ initial: '字', name: '日日一字', tagline: '一天一個字，手寫練日文' },
+{ initial: '披', name: '披薩多益', tagline: '每天刷多益單字' },
+{ initial: '雞', name: '公雞超人', tagline: '闖關練多益聽讀文法' }
+]
+};
+}
+}
+</script>
+</body>
+</html>

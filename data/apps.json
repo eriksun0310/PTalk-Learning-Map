@@ -612,7 +612,8 @@
     ],
     "next": [
       "sushijp",
-      "ninja-pigeon"
+      "ninja-pigeon",
+      "sushispeak"
     ],
     "updated": "2026-11-04",
     "folder": "sushiconversationapp",
@@ -958,6 +959,81 @@
     ],
     "pricing": "免費下載，免費版同時鎖 1 個 App、只能用軟鎖、首頁有橫幅廣告；Pro 有月繳、年繳與買斷，價格以 App Store 標示為準。",
     "prev": [],
+    "next": [],
+    "media": {
+      "video": null,
+      "poster": null,
+      "screenshots": [],
+      "appStore": null,
+      "googlePlay": null
+    }
+  },
+  {
+    "id": "sushispeak",
+    "name": "壽司口說",
+    "tagline": "學了很久，一開口就卡住？看情境直接開口說",
+    "language": "jp",
+    "stages": [
+      "N4",
+      "N3",
+      "N2"
+    ],
+    "skills": [
+      "口說"
+    ],
+    "audience": "學過日文、考過 N4～N2，但一開口就卡住的人；沒有日文環境、想每天練一點口說的人；要去日本旅行、留學、工作，想先練好常用應對的人",
+    "features": [
+      {
+        "title": "看情境，直接開口",
+        "desc": "每題一個生活或職場場景，按下麥克風說出你的回答，沒有倒數計時",
+        "paid": false
+      },
+      {
+        "title": "卡住了，壽司給你提示",
+        "desc": "先給開頭，再給半句，最後聽答案跟著唸",
+        "paid": false
+      },
+      {
+        "title": "每課先暖身",
+        "desc": "每課開頭 3 個實用說法，聽示範、跟著唸，再進入題目",
+        "paid": false
+      },
+      {
+        "title": "我的句庫與複習",
+        "desc": "用了提示或跳過的句子自動收進句庫，在第 1、3、7 天排進複習",
+        "paid": false
+      },
+      {
+        "title": "不方便說話也能練",
+        "desc": "打開「不方便說話」，心裡默念，再看答案對一對",
+        "paid": false
+      },
+      {
+        "title": "語音不錄音、不上傳",
+        "desc": "語音只在手機上辨識成文字，用來判斷你有沒有說到",
+        "paid": false
+      },
+      {
+        "title": "解鎖全部單元",
+        "desc": "免費版含起點起算的前 2 個單元；訂閱解鎖全部單元與之後每月新增的單元",
+        "paid": true
+      },
+      {
+        "title": "免廣告",
+        "desc": "免費版有橫幅廣告，訂閱後沒有廣告",
+        "paid": true
+      }
+    ],
+    "counts": [
+      {
+        "label": "單元",
+        "value": 9
+      }
+    ],
+    "pricing": "免費下載，免費版含從你的起點算起的前 2 個單元（有橫幅廣告）；訂閱（月費／年費，皆可先免費試用 7 天）解鎖全部單元、沒有廣告，價格以商店標示為準。",
+    "prev": [
+      "koko"
+    ],
     "next": [],
     "media": {
       "video": null,

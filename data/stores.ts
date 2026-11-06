@@ -64,6 +64,12 @@ export const stores: Record<string, StoreInfo> = {
     androidPackage: "",
     released: true,
   },
+  sushispeak: {
+    // 尚未上架；通過審核後把 released 改 true
+    iosId: "6831479919",
+    androidPackage: "com.ptalk.sushispeak",
+    released: false,
+  },
 };
 
 export function iosUrl(id: string): string | null {

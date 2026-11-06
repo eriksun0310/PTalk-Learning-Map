@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { AppData } from "@/lib/apps";
+import { initialOf, NO_ICON, type AppData } from "@/lib/apps";
 
 /** App 圖示：public/icons/<id>.png（256px，由各 App 專案的 icon.png 縮出） */
 export function AppBadge({
@@ -15,6 +15,17 @@ export function AppBadge({
   colored?: boolean;
   className?: string;
 }) {
+  if (NO_ICON.has(app.id)) {
+    return (
+      <span
+        aria-hidden="true"
+        className={`flex flex-none items-center justify-center bg-soft font-bold text-sub ${className}`}
+        style={{ width: size, height: size, borderRadius: radius, fontSize: size * 0.45 }}
+      >
+        {initialOf(app)}
+      </span>
+    );
+  }
   return (
     <Image
       src={`/icons/${app.id}.png`}

@@ -72,7 +72,7 @@ const SKILL_ROWS: Record<"jp" | "en", SkillRow[]> = {
     { skill: "認字", apps: ["kana5min"] },
     { skill: "單字", apps: ["sushitower", "sushijp"] },
     { skill: "聽力閱讀", apps: ["ninja-pigeon"] },
-    { skill: "口說", apps: ["koko"], soonFrom: "N3" },
+    { skill: "口說", apps: ["koko", "sushispeak"] },
     { skill: "手寫", apps: ["hitofude"] },
   ],
   en: [

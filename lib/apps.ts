@@ -61,10 +61,14 @@ const INITIALS: Record<string, string> = {
   sushijp: "壽",
   "ninja-pigeon": "鴿",
   koko: "K",
+  sushispeak: "說",
   hitofude: "字",
   pizzatoeic: "披",
   "rooster-hero": "雞",
 };
+
+/** 還沒有正式圖示的 App：用單字縮寫的色塊代替（有了 public/icons/<id>.png 就從這裡拿掉） */
+export const NO_ICON = new Set<string>(["sushispeak"]);
 
 export function initialOf(app: AppData): string {
   return INITIALS[app.id] ?? app.name.slice(0, 1);
@@ -98,6 +102,7 @@ const HOW: Record<string, string> = {
   koko: "生活場景，一句句開口說",
   pizzatoeic: "每天 5 分鐘刷多益單字",
   "rooster-hero": "職場情境練多益題目",
+  sushispeak: "看情境直接開口，卡住有提示",
   lockin: "鎖住手機干擾，專心去學",
 };
 

@@ -1,6 +1,6 @@
 # PTalk 學習地圖官網
 
-讓用戶一分鐘內知道「該下載哪一款 App」並按下載。共 8 款：日文 6（諧音五十音、壽司轉珠、日日一字、壽司日檢、忍者信鴿、KOKO）、英文 2（披薩多益、公雞超人）。
+讓用戶一分鐘內知道「該下載哪一款 App」並按下載。共 9 款（含學習輔助 Lock In）：日文 7（諧音五十音、壽司轉珠、日日一字、壽司日檢、忍者信鴿、KOKO、壽司口說）、英文 2（披薩多益、公雞超人）。
 
 技術：Next.js 16（App Router）、React 19、TypeScript、Tailwind v4、Vitest。
 注意：Next 16 的寫法與舊版有差異，改程式前請先看 `node_modules/next/dist/docs/` 與 `AGENTS.md`。

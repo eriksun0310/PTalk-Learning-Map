@@ -8,7 +8,7 @@ import { Icon } from "@/components/Icon";
 import { Screenshots } from "@/components/Screenshots";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
-import { androidUrl, isReleased } from "@/data/stores";
+import { androidUrl, iosUrl, isReleased } from "@/data/stores";
 import {
   apps,
   getApp,
@@ -93,8 +93,12 @@ export default async function AppPage({ params }: { params: Promise<{ id: string
             <div className="order-1 flex flex-col gap-2.5 md:order-none">
               <DownloadButtons appId={app.id} name={app.name} />
               {released && (
-                <span className={`text-[13px] text-mute ${androidUrl(app.id) ? "text-center md:hidden" : "max-md:text-center"}`}>
-                  {androidUrl(app.id) ? "iPhone 開 App Store，Android 開 Google Play" : "目前只有 iPhone 版"}
+                <span className={`text-[13px] text-mute ${androidUrl(app.id) && iosUrl(app.id) ? "text-center md:hidden" : "max-md:text-center"}`}>
+                  {!iosUrl(app.id)
+                    ? "目前只有 Android 版，iPhone 版審核中"
+                    : androidUrl(app.id)
+                      ? "iPhone 開 App Store，Android 開 Google Play"
+                      : "目前只有 iPhone 版"}
                 </span>
               )}
             </div>

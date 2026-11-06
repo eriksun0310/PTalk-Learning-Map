@@ -2,6 +2,7 @@
  * 各 App 的商店連結與上架狀態。
  * released=false 的 App 在網站上顯示「即將上架」，不放下載按鈕。
  * 審核通過後：補上 iosId（若還是空字串）並把 released 改成 true。
+ * 只有 Android 先上架時：released 改 true、加 iosPending: true；iPhone 通過後拿掉 iosPending。
  */
 export type StoreInfo = {
   /** App Store 數字 id；空字串＝尚未取得 */
@@ -9,19 +10,23 @@ export type StoreInfo = {
   /** Google Play 套件名稱 */
   androidPackage: string;
   released: boolean;
+  /** iPhone 版還在審核（只有 Android 已上架）；true 時不給 App Store 連結 */
+  iosPending?: boolean;
 };
 
 export const stores: Record<string, StoreInfo> = {
   kana5min: {
     iosId: "6827398112",
     androidPackage: "com.ptalk.kana5min",
-    released: false, // 審核中
+    released: true, // Google Play 已上架（2026-11-06）
+    iosPending: true,
   },
   sushitower: {
     // TODO: App Store id 待補（審核中，通過後補上並把 released 改 true）
     iosId: "",
     androidPackage: "com.ptalk.kaitensushi",
-    released: false, // 審核中
+    released: true, // Google Play 已上架（2026-11-06）
+    iosPending: true,
   },
   sushijp: {
     iosId: "6774095306",
@@ -63,7 +68,7 @@ export const stores: Record<string, StoreInfo> = {
 
 export function iosUrl(id: string): string | null {
   const s = stores[id];
-  return s && s.iosId ? `https://apps.apple.com/app/id${s.iosId}` : null;
+  return s && s.iosId && !s.iosPending ? `https://apps.apple.com/app/id${s.iosId}` : null;
 }
 
 export function androidUrl(id: string): string | null {

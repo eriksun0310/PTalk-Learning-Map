@@ -18,8 +18,7 @@ export const stores: Record<string, StoreInfo> = {
   kana5min: {
     iosId: "6827398112",
     androidPackage: "com.ptalk.kana5min",
-    released: true, // Google Play 已上架（2026-11-06）
-    iosPending: true,
+    released: true, // Google Play 2026-11-06、App Store 2026-11 已上架
   },
   sushitower: {
     // TODO: App Store id 待補（審核中，通過後補上並把 released 改 true）

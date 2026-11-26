@@ -5,9 +5,11 @@ import { AppBadge } from "@/components/AppBadge";
 import { AppVideos } from "@/components/AppVideos";
 import { DownloadButtons } from "@/components/DownloadButtons";
 import { Icon } from "@/components/Icon";
+import { JsonLd } from "@/components/JsonLd";
 import { Screenshots } from "@/components/Screenshots";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
+import { appDescription, appJsonLd } from "@/lib/seo";
 import { androidUrl, iosUrl, isReleased } from "@/data/stores";
 import {
   apps,
@@ -32,7 +34,20 @@ export async function generateMetadata({
   const { id } = await params;
   const app = getApp(id);
   if (!app) return {};
-  return { title: `${app.name} 介紹`, description: app.tagline };
+  return {
+    title: `${app.name} 介紹`,
+    description: appDescription(app),
+    alternates: { canonical: `/apps/${app.id}` },
+    openGraph: {
+      type: "website",
+      locale: "zh_TW",
+      title: `${app.name} 介紹｜PTalk 學習地圖`,
+      description: appDescription(app),
+      url: `/apps/${app.id}`,
+      images: [`/og/${app.id}.png`],
+    },
+    twitter: { card: "summary_large_image", images: [`/og/${app.id}.png`] },
+  };
 }
 
 /** audience 欄位以「；」分成「適合誰」與「不適合誰」 */
@@ -56,6 +71,7 @@ export default async function AppPage({ params }: { params: Promise<{ id: string
 
   return (
     <>
+      <JsonLd data={appJsonLd(app)} />
       <SiteHeader back />
       <main>
         <section className="mx-auto grid max-w-[1200px] gap-x-[72px] px-5 pt-6 md:grid-cols-[300px_minmax(0,1fr)] md:px-10 md:pt-16 md:pb-20">
@@ -204,6 +220,11 @@ export default async function AppPage({ params }: { params: Promise<{ id: string
             )}
           </div>
         </section>
+        {app.updated && (
+          <p className="mx-auto m-0 max-w-[1200px] px-5 pb-8 text-[13px] text-mute md:px-10">
+            最後更新：<time dateTime={app.updated}>{app.updated}</time>
+          </p>
+        )}
       </main>
 
       <div className="sticky bottom-0 border-t border-line bg-white px-5 py-3 md:hidden">

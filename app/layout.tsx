@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, Noto_Sans_TC } from "next/font/google";
+import { apps } from "@/lib/apps";
+import { SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const noto = Noto_Sans_TC({
@@ -16,13 +18,29 @@ const plex = IBM_Plex_Mono({
   display: "swap",
 });
 
+const jpCount = apps.filter((a) => a.language === "jp").length;
+const enCount = apps.filter((a) => a.language === "en").length;
+const supportCount = apps.filter((a) => a.language === "none").length;
+const DESCRIPTION = `PTalk 是台灣團隊開發的語言學習 App 系列，共 ${apps.length} 款：日文 ${jpCount} 款（零基礎到 N1）、英文多益 ${enCount} 款、學習輔助 ${supportCount} 款。回答一個問題，告訴你現在該下載哪一款。`;
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "PTalk 學習地圖｜現在的你，該下載哪一款？",
-    template: "%s｜PTalk 學習地圖",
+    default: "PTalk 學習地圖｜日文與多益學習 App 推薦",
+    template: `%s｜${SITE_NAME}`,
   },
-  description:
-    "回答 3 個問題，直接告訴你最適合的一款。PTalk 共 8 款語言學習 App：日文 6 款、英文（多益）2 款，每一款都可以免費下載。",
+  description: DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "zh_TW",
+    siteName: SITE_NAME,
+    title: "PTalk 學習地圖｜日文與多益學習 App 推薦",
+    description: DESCRIPTION,
+    url: "/",
+    images: ["/og/default.png"],
+  },
+  twitter: { card: "summary_large_image", images: ["/og/default.png"] },
 };
 
 export const viewport: Viewport = {

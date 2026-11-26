@@ -22,6 +22,8 @@ export type AppData = {
   features: AppFeature[];
   counts: { label: string; value: number }[];
   pricing: string;
+  /** 資料最後更新日（YYYY-MM-DD），用於 sitemap */
+  updated?: string;
   prev: string[];
   next: string[];
   media: {

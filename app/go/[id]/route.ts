@@ -18,5 +18,6 @@ export async function GET(
   const res = NextResponse.redirect(store ?? new URL(`/apps/${id}`, request.url), 302);
   res.headers.set("Cache-Control", "no-store");
   res.headers.set("Vary", "User-Agent");
+  res.headers.set("X-Robots-Tag", "noindex, nofollow");
   return res;
 }

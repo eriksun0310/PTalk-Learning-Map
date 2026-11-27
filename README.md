@@ -22,14 +22,14 @@ npm run start      # 跑建置好的版本
 | 路徑 | 說明 |
 | --- | --- |
 | `/` | 首頁：痛點標題＋影片 → 「你現在是？」選程度 → 當場出現推薦的 1 款（影片、3 個好處、下載）→ 學習路線（零基礎～N1，日／英切換）→ 痛點清單 → 全部 App |
-| `/apps/<id>` | 各 App 介紹（`generateStaticParams` 預先產生 8 頁） |
+| `/apps/<id>` | 各 App 介紹（`generateStaticParams` 預先產生每款 App 一頁） |
 | `/go/<id>` | 依 User-Agent 轉址：iPhone 到 App Store、Android 到 Google Play、其他回 `/apps/<id>` |
 
 ## 資料在哪
 
 | 檔案 | 內容 |
 | --- | --- |
-| `data/apps.json` | 8 款 App 的名稱、一句話、語言、階段（stages）、技能（skills）、適合對象、功能、數字、定價、前後站（prev／next）。**內容以這份為準**，頁面不寫死數字。 |
+| `data/apps.json` | 全部 App 的名稱、一句話、語言、階段（stages）、技能（skills）、適合對象、功能、數字、定價、前後站（prev／next）。**內容以這份為準**，頁面不寫死數字。 |
 | `data/videos.json` | 各 App 的螢幕錄影（`public/videos/<id>/1.mp4`…）與標題；沒有該 id 或陣列為空就顯示佔位框。 |
 | `data/stores.ts` | 各 App 的 iOS id、Android 套件名、`released`。`released: false` 的顯示「即將上架」、不給下載連結。 |
 | `lib/apps.ts` 的 `HOW` | 學習路線上每款 App 的一句話（講「怎麼學」） |
@@ -65,4 +65,6 @@ npm run start      # 跑建置好的版本
 - 商店：壽司轉珠 iOS id 待補；諧音五十音（iOS 審核中）、壽司轉珠（審核中）通過後把 `released` 改 `true`。
 - 手機掃描用的 QR Code（結果頁目前是佔位框）。
 - 價格：apps.json 中標示「待確認」的定價文字。
-- 網站網域、分享圖（Open Graph）、favicon 尚未設定。
+- 正式網域尚未設定：取得後在 Vercel 設環境變數 `NEXT_PUBLIC_SITE_URL`（canonical、sitemap、OG 都讀這個）。
+- 分享圖：`python3 scripts/gen_og.py` 依 `data/apps.json` 產生 `public/og/`，新增 App 或改名後重跑。
+- SEO／GEO 待辦見 `GEO-TODO.md`，健檢報告見 `GEO-AUDIT.md`。

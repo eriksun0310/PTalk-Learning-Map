@@ -14,7 +14,13 @@ export function SiteFooter({ full = false }: { full?: boolean }) {
           <a href="mailto:connect.ptalk@gmail.com" className="text-ontone hover:text-white">
             connect.ptalk@gmail.com
           </a>
-          <span>Threads @ptalk.design</span>
+          <a
+            href="https://www.threads.com/@ptalk.design"
+            rel="me noopener"
+            className="text-ontone hover:text-white"
+          >
+            Threads @ptalk.design
+          </a>
         </div>
       </div>
     </footer>

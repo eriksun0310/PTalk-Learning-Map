@@ -39,14 +39,14 @@
 - [ ] `/faq` 頁 + `FAQPage` JSON-LD（問答須頁面可見且一致）（M）
 - [ ] `/about` 頁 + `Organization` sameAs（M）
 - [ ] `/privacy`、服務條款（或 footer 連到各 App 既有政策）（S–M）
-- [ ] footer：Threads 改成連結，加 About／FAQ／Privacy 連結（S）
+- [x] footer：Threads 改成連結，加 About／FAQ／Privacy 連結（S）
 - [ ] `/changelog`（有真實版本說明後再做）（S–M）
 - [ ] PageSpeed Insights 量測首頁與一個 App 頁，填入實測數字（S）
 - [ ] 首屏影片加 poster、僅載一支；`@next/bundle-analyzer` 檢視 `HomePage` bundle，靜態區塊拆 server component（M）
 - [ ] `app/icon.png`、`app/apple-icon.png`（S）
 - [ ] 確認僅圖示的連結有 `aria-label`／相鄰文字（S）
-- [ ] 新增測試：sitemap 涵蓋全部 App、description 不含「待確認」、每款有 `updated`（S）
-- [ ] README 更新：款數、頁面清單、環境變數（S）
+- [x] 新增測試：sitemap 涵蓋全部 App、description 不含「待確認」、每款有 `updated`（S）
+- [x] README 更新：款數、頁面清單、環境變數（S）
 
 ## P3 — 進階
 - [ ] `/compare/sushijp-vs-ninja-pigeon`（M）
